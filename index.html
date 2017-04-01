@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Train Schedule</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <!-- Moment.js Reference -->
+    <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  </head>
+  <body>
+    <!-- Employee Tracker -->
+    <div class="container">
+      <!-- Jumbotron -->
+      <div class="jumbotron" style="background-color: black; color: white">
+        <h1 class="text-center">Train Schedule</h1>
+        <h3 class="text-center">Check and Share Train Schedule</h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+        <!-- Current Employees-->
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title"><strong>Train history</strong></h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-hover" id='employee-table'>
+                <thead>
+                  <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Arrival Time</th>
+                    <th>Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Add Employee  -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title"><strong>Add a train schedule</strong></h3>
+            </div>
+            <div class="panel-body">
+              <!-- Entry Form -->
+              <form>
+                <div class="form-group">
+                  <label for="Train-name-input">Train Name</label>
+                  <input class="form-control" id="Train-name-input" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="Destination-input">Destination</label>
+                  <input class="form-control" id="Destinataion-input" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="Arrival-input">Arrival Time</label>
+                  <input class="form-control" id="Arrival-input" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="type-input">Type</label>
+                  <input class="form-control" id="type-input" type="text">
+                </div>
+                <button class="btn btn-primary" id="add-train-btn" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript -->
+
+<script src="assets\script.js"></script>
+
+  </body>
+</html>
