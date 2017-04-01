@@ -21,13 +21,13 @@
   		var $name = $("#Train-name-input").val().trim();
   		var $destination = $("#Destination-input").val().trim();
   		var $arrival = $("#Arrival-input").val().trim();
-  		var $freq = $("#type-input").val().trim();
+  		var $type = $("#type-input").val().trim();
 
   		var uTrain = {
   		uName: $name,
   		uDestination: $destination,
   		uArrival: $arrival,
-  		uFreq: $freq
+  		uType: $type
   		};
 
   		database.ref().push(uTrain);
